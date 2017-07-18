@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CV</title>
+<link rel="stylesheet" href="bootstrap.css">
+<script src="JQuery.js"></script>
+<style>
+*{
+	font-family: '微软雅黑','黑体',sans-serif;
+	margin: 0;
+	padding: 0;
+}
+img{display: block;}
+.jumbotron{
+	color: white;
+	background: url(../Pic/header.jpg) no-repeat;
+	padding: 30px;
+	margin-right: -15px;//去除bootstrap右边距
+	margin-bottom: 50px;
+}
+.col-md-4{
+	margin: 0;
+	padding: 0;
+}
+.col-md-4 img{
+	margin: 0 auto;
+}
+.title{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+}
+.info,.proj,.work{
+	text-align: left;
+	display: none;
+}
+.content{
+	line-height: 20px;
+	padding: 0 15%;
+}
+.content span{
+	font-size: 15px;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+	<div class="jumbotron">
+		<h1>庞**-个人简历</h1>
+		<h2>求职意向：Web前端开发</h2>
+		<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;8888888</p>
+		<p><span class="glyphicon glyphicon-envelope" aria-hidden="true">&nbsp;justjcm@126.com</span></p>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<img id="info" src="../Pic/头像.png" alt="" title="more info">
+			<p class="title">个人信息</p>
+			<div class="info">
+				<img src="../Pic/pic.jpg" alt="" class="img-circle"><br>
+				<p class="content">
+					姓名：庞**&nbsp;&nbsp;性别：女<br>毕业院校：大连理工大学&nbsp;&nbsp;学历：本科<br>联系电话：8888888&nbsp;&nbsp;邮箱：justjcm@126.com<br>
+					<span>个人技能：</span><br>
+						1.熟悉HTML/HTML5/CSS/CSS3/JavaScript等Web前端技术<br>
+						2.熟练使用PS切图，用div+css布局页面，自适应布局<br>
+						3.了解bootstrap响应式布局<br>
+						4.能够根据PSD文档仿照页面设计，生成HTML <br>
+						5.思维敏捷学习能力强，做事认真负责，抗压能力强<br>
+						6.逻辑性强，英语能力较好，具有良好的沟通协作性。<br>
+						7.熟练使用MS office 等办公软件。<br>
+					
+				</p>
+			</div>	
+		</div>
+		<div class="col-md-4">
+			<img id="proj" src="../Pic/project.png" alt="" title="more info"><p class="title">项目经历</p>
+			<div class="proj">
+				<p class="content">
+					
+				</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<img id="work" src="../Pic/job.png" alt="" title="more info">
+			<p class="title">工作经验</p>
+			<div class="work">
+				<p class="content">
+					<span>2015.7-2017.3&nbsp;&nbsp;&nbsp;上海天马微电子有限公司&nbsp;&nbsp;&nbsp;产品经理</span><br>
+					工作内容：<br>
+					1.分析所负责产品的研发前景和功能方向；<br> 
+					2.充分了解产品需求，并对用户提交的需求仔细分析评估，整合成产品规格定义，推动研发设计及开发产品； <br>
+					3.销售预算达成分析：利用excel制作报表定期分析产品营收情况，识别风险点与机会点，形成对策，推动营销目标达成<br> 
+					4.产品推广：以细分市场为纬度，定期拜访客户，提供新产品功能信息，推广给客户<br> 
+					5.产品管理：产品生命周期中识别材料供应情况，主导变更、切换、产品线升级等，生命周期结束时关闭产品 <br>
+					6.产品规划：分析市场、客户需求，整合规格，定义产品规格开发新产品<br> 
+					7.安全库存样品管理:利用ERP系统管理库存及物料；线下记录产品送样情况，定期库存数量，提醒样品补充 <br>
+					8.其他工作：协助经理整理部门内部人员考勤/休假情况；月报等数据分析并利用PPT制作报告。<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$('#info').click(function(){
+		$('.info').toggle(1000);
+	});
+	$('#proj').click(function(){
+		$('.proj').toggle(1000);
+	});
+	$('#work').click(function(){
+		$('.work').toggle(1000);
+	});
+</script>
+</html>
